@@ -393,7 +393,17 @@ if [ -f banner ]; then
 fi;
 
 KERNEL_STRING="$(file_getprop anykernel.sh kernel.string)";
-ui_print "$KERNEL_STRING";
+ui_print "**************************************************";
+ui_print "* $(file_getprop anykernel.sh kernel.string)     *";
+ui_print "*___________            .__                      *";
+ui_print "*\_   _____/ ________ __|__| ____   _______  ___ *";
+ui_print "* |    __)_ / ____/  |  \  |/    \ /  _ \  \/  / *";
+ui_print "*|        < <_|  |  |  /  |   |  (  <_> >    <   *";
+ui_print "*/_______  /\__   |____/|__|___|  /\____/__/\_ \ *";
+ui_print "*       \/    |__|             \/             \/ *";
+ui_print "* For Asus Zenfone Max Pro M1                    *";
+ui_print "* By Equinox Team                                *";
+ui_print "**************************************************";
 if [ -f version ]; then
   ui_print " ";
   ui_printfile version;
